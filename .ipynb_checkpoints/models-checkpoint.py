@@ -23,7 +23,7 @@ class Net(nn.Module):
         
         # convolutional layer (sees 224x224x1 image tensor)
         # (W-F)/S +1
-        self.conv1 = nn.Conv2d(1, 32, 3)
+        self.conv1 = nn.Conv2d(1, 32, 5)
         # convolutional layer (sees 111x111x32 image tensor)
         self.conv2 = nn.Conv2d(32, 64, 3)
         # convolutional layer (sees 54x54x64 image tensor)
